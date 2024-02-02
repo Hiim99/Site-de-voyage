@@ -62,6 +62,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .hebergements-and-populaires section {
@@ -119,6 +120,160 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+.head-page {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hebergements-et-activites{
+    display: flex;
+}
+.nav{
+    margin-top: 2px;
+}
+.nav:hover{
+    border-top: solid 2px blue;
+    margin-top: 0px;
+}
+
+.hebergements-et-activites p {
+   margin: 20px;
+}
+.head-title p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 0.5;
+}
+.title1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.title2{
+    font-size: 15px;
+}
+
+.my-form{
+    display: flex;
+    align-items: row;
+    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  input{
+    border: solid 1px #f2f2f2;
+    font-size: 15px;
+    text-align: center;
+  }
+  .localisation{
+    border-radius: 15px 0px 0px 15px;
+  }
+  .cities{
+    font-weight: bold;
+  
+}
+.search-button{
+    background-color: #0065FC;
+    color: #fff;
+    border-radius: 0px 15px 15px 0px  ;
+    border: thin;
+    font-weight: bold;
+    padding: 15px;
+  
+}  
+  .container{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+  }
+  .economique{
+    display: flex;
+    border: solid 2px #d9d9d9;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  .economique:hover{
+    background-color: #DEEBFF;
+  }
+  .logo-filters{
+    height : 19px;
+    width : 21px;
+    margin-right: 10px;
+  }
+  .infos{
+    display: flex;
+    padding: 10px;
+  }
+  .logo-info{
+    height: 25px;
+    margin: 12px 10px;
+  }
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.marseille-card{
+    height: 220px;
+    width: 240px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 33px;
+}
+.marseille-card img{
+    border-radius: 20px 20px 0 0;
+    height:120px;
+    width:100%;
+    object-fit: cover;
+}
+
+.marseille-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.marseille-cards .card-subtitle {
+    margin: 0;
+}
+
+.marseille-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/* La partie activités à Marseille */
+.activites-marseille-cards{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.activites-marseille-card{
+    height: 400px;
+    width: 240px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 33px;
+}
+.activites-marseille-card img{
+    border-radius: 20px 20px 0 0;
+    height:350px;
+    width:100%;
+    object-fit: cover;
+}
+
+.activites-marseille-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 
