@@ -121,10 +121,15 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* header */
 .head-page {
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo-booki{
+    width: 61px;
+    height: 19px;
 }
 .hebergements-et-activites{
     display: flex;
@@ -140,6 +145,7 @@ a {
 .hebergements-et-activites p {
    margin: 20px;
 }
+/*Titres*/
 .head-title p {
     font-family: 'Raleway', sans-serif;
     line-height: 0.5;
@@ -151,7 +157,7 @@ a {
 .title2{
     font-size: 15px;
 }
-
+/*Formulaire*/
 .my-form{
     display: flex;
     align-items: row;
@@ -180,6 +186,7 @@ a {
     padding: 15px;
   
 }  
+/*Les filtres*/
   .container{
     display: flex;
     column-gap: 15px;
@@ -187,13 +194,13 @@ a {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
   }
-  .economique{
+  .filter{
     display: flex;
     border: solid 2px #d9d9d9;
     padding: 15px;
     border-radius: 30px;
   }
-  .economique:hover{
+  .filter:hover{
     background-color: #DEEBFF;
   }
   .logo-filters{
@@ -201,6 +208,7 @@ a {
     width : 21px;
     margin-right: 10px;
   }
+  /*information*/
   .infos{
     display: flex;
     padding: 10px;
@@ -209,6 +217,7 @@ a {
     height: 25px;
     margin: 12px 10px;
   }
+  /* les cartes d'hébergements à Marseille */
   .first-row{
     display: flex;
     flex-direction: row;
@@ -249,15 +258,18 @@ a {
     margin-bottom: 5px;
 }
 
-/* La partie activités à Marseille */
+/* Les activités à Marseille */
+.section-title-marseille{
+    margin: 25px 0px 0px 25px;
+}
 .activites-marseille-cards{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
 }
 .activites-marseille-card{
-    height: 400px;
-    width: 240px;
+    height: 450px;
+    width: 290px;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -266,14 +278,13 @@ a {
 }
 .activites-marseille-card img{
     border-radius: 20px 20px 0 0;
-    height:350px;
+    height:400px;
     width:100%;
     object-fit: cover;
 }
 
 .activites-marseille-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 10px 0px 4px 10px;
 }
 
 
