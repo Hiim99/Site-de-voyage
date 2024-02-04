@@ -136,8 +136,9 @@ a {
 }
 .nav{
     margin-top: 2px;
+    width:100%;
 }
-.nav:hover{
+.nav:hover {
     border-top: solid 2px blue;
     margin-top: 0px;
 }
@@ -188,19 +189,24 @@ a {
     display: none; 
 }
 /*Les filtres*/
-  .container{
+.filtre-container{
     display: flex;
     column-gap: 15px;
     margin-top: 15px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
-  }
-  .filter{
+}
+.filters {
+    display: flex;
+    flex-direction: row;
+}
+.filter {
     display: flex;
     border: solid 2px #d9d9d9;
     padding: 15px;
     border-radius: 30px;
-  }
+    margin: 5px;
+}
   .filter:hover{
     background-color: #DEEBFF;
   }
@@ -353,5 +359,156 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-   
+   .main-container {
+        padding: 0;
+    }
+    .head-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-booki{
+        align-items: center;
+        margin-top: 25px;
+    }
+    /* La bordure bleue qui apparait au survol passe en bas dans la version mobile + la bordure grise*/
+    .hebergements-et-activites{
+        border-bottom: solid 2px #F2F2F2;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .head-page a{
+        width: 100%;
+    }
+    .hebergements-et-activites p {
+        flex: 1; /* This makes each paragraph take up equal space */
+        text-align: center;
+    }
+    .nav:hover{
+        border-top: none;
+        border-bottom: solid 2px blue;
+        margin-bottom: 0px;  
+    }
+    /* modifications des titres*/
+    .head-title p {
+        line-height: 1;
+    }
+    .title1{
+        font-size: x-large;
+    }
+    .title2 {
+        font-size: large;
+    }
+    /* Modification du formulaire*/
+    .my-form{
+        display: flex;
+        width: 100px;
+    }
+    /* Modification bouton rechercher ----> loupe */
+    .cities{
+        border-right: none;
+    }
+    .search-button{
+        border-radius: 10px;
+    }
+    .search-button .search-text {
+        display: none; 
+    }
+
+    .search-button .search-icon {
+        display: inline;
+    }
+
+
+   /* Modification des filtres*/
+   .filtre-container{
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+.filter {
+    display: flex;
+    border: solid 2px #d9d9d9;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 5px;
+    flex-basis: 35%;
+}
+
+    .info{
+        font-size: small;
+    }
+    /* Inverser la partie hébergements à Marseille et hébergements populaires*/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    /* La partie les plus populaires*/
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    /* La partie hébergements à Marseille */
+    .hebergements {
+        background-color:white !important;
+        border-radius: 20px;
+        padding: none;
+        box-sizing: border-box;
+    }
+    .marseille-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .marseille-card{
+        height: 200px;
+        width: 100%;
+    }
+    
+
+
+
+    /*La partie activités à Marseille*/
+    
+    .activites-marseille-cards{
+        display: flex;
+        flex-direction:column;
+        padding: 10px;
+    }
+    .activites-marseille-card{
+        height: 220px;
+        width: 100%;
+    }
+    .activites-marseille-card img{
+        height:180px;
+        width:100%;
+ 
+    }
+    .activites-marseille-cards .card-title {
+        margin: 5px 0px 0px 20px;
+    }
+
+
+.footer{
+    flex-direction: column;
+}
+.assistance{
+    margin-left: 15px;
+}
 }
