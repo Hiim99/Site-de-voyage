@@ -424,7 +424,7 @@ button{
 
 
    /* Modification des filtres*/
-   .filtre-container{
+   .filter-container{
     flex-direction: column;
 }
 
