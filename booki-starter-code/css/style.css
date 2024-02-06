@@ -192,7 +192,7 @@ button{
     display: none; 
 }
 /*Les filtres*/
-.filtre-container{
+.filter-container{
     display: flex;
     column-gap: 15px;
     margin-top: 15px;
@@ -384,7 +384,7 @@ button{
         width: 100%;
     }
     .hebergements-et-activites p {
-        flex: 1; /* This makes each paragraph take up equal space */
+        flex: 1;
         text-align: center;
     }
     .nav:hover{
@@ -443,7 +443,6 @@ button{
     margin: 5px;
     flex-basis: 35%;
 }
-
     .info{
         font-size: small;
     }
@@ -483,11 +482,7 @@ button{
         height: 200px;
         width: 100%;
     }
-    
-
-
-
-    /*La partie activités à Marseille*/
+     /*La partie activités à Marseille*/
     
     .activites-marseille-cards{
         display: flex;
@@ -506,12 +501,10 @@ button{
     .activites-marseille-cards .card-title {
         margin: 5px 0px 0px 20px;
     }
+/* Footer */
 
-
-.footer{
-    flex-direction: column;
-}
-.assistance{
-    margin-left: 15px;
-}
+    .footer{
+      flex-direction: column;
+    }
+   
 }
