@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top : 0;
 }
 
 .main-container {
@@ -161,7 +162,7 @@ a {
 /*Formulaire*/
 .my-form{
     display: flex;
-    height: 50px;
+    height: 45px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -170,9 +171,12 @@ a {
     font-size: 15px;
     text-align: center;
   }
-  .localisation{
+  .location{
+    border: gray;
     border-radius: 15px 0px 0px 15px;
-  }
+    padding: 15px;
+
+}
   .cities{
     font-weight: bold;
   
@@ -187,6 +191,7 @@ button{
     border: thin;
     font-weight: bold;
     padding: 15px;
+    text-align: center;
 } 
 .search-button .search-icon {
     display: none; 
@@ -213,23 +218,18 @@ button{
   .filter:hover{
     background-color: #DEEBFF;
   }
-  .logo-filters{
-    height : 19px;
-    width : 21px;
-    margin-right: 10px;
-  }
   /*information*/
   .infos{
     display: flex;
     padding: 10px;
   }
-  .logo-info{
+  .fa-circle-info{
     height: 25px;
-    margin: 12px 10px;
+    margin: 18px 10px;
   }
 
 .marseille-card{
-    height: 240px;
+    height: 200px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
@@ -316,6 +316,9 @@ button{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter{
+        font-size: 15px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -362,6 +365,9 @@ button{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body{
+        margin: 0;
+    }
    .main-container {
         padding: 0;
     }
@@ -406,6 +412,7 @@ button{
     .my-form{
         display: flex;
         width: 100px;
+        margin-left: 15px ;
     }
     /* Modification bouton rechercher ----> loupe */
     .cities{
@@ -424,26 +431,21 @@ button{
 
 
    /* Modification des filtres*/
-   .filter-container{
+.filter-container{
     flex-direction: column;
 }
 
 .filters {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-around; 
     align-items: center; 
 }
 .filter {
     display: flex;
-    border: solid 2px #d9d9d9;
-    padding: 15px;
-    border-radius: 30px;
-    margin: 5px;
     flex-basis: 35%;
+    font-size: 14px;
 }
-    .info{
+.info{
         font-size: small;
     }
     /* Inverser la partie hébergements à Marseille et hébergements populaires*/
