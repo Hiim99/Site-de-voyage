@@ -229,7 +229,7 @@ button{
   }
 
 .marseille-card{
-    height: 200px;
+    height: 215px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
@@ -365,9 +365,6 @@ button{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    body{
-        margin: 0;
-    }
    .main-container {
         padding: 0;
     }
